@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:layout_height="@dimen/_44sdp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/comment"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="@dimen/_44sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_back"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="@dimen/_44sdp">
+
+
+        </ImageView>
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/rv_commentlisting"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+</LinearLayout>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.webgurus.attendanceportal.ui.Dashboard"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.webgurus.attendanceportal.ui.dashbaord.DashBoardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_userdashboard" />
+
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.webgurus.attendanceportal.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.webgurus.attendanceportal.ui.attendance.AttendanceFragment"
+        android:label="@string/attendance"
+        tools:layout="@layout/fragment_attendance" />
+
+    <fragment
+        android:id="@+id/nav_taskslist"
+        android:name="com.webgurus.attendanceportal.ui.task.MyTaskFragment"
+        android:label="@string/task"
+        tools:layout="@layout/fragment_task" />
+
+
+    <fragment
+        android:id="@+id/nav_mycustomer"
+        android:name="com.webgurus.attendanceportal.ui.customer.OurCustomersFragment"
+        android:label="@string/customer"
+        tools:layout="@layout/fragment_customers" />
+
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_createcustomer"-->
+    <!--        android:name="com.webgurus.attendanceportal.ui.createuser.CreateUserFragment"-->
+    <!--        android:label="@string/createcust"-->
+    <!--        tools:layout="@layout/fragment_customers" />-->
+
+
+    <fragment
+        android:id="@+id/nav_userlisiting"
+        android:name="com.webgurus.attendanceportal.ui.createuser.UserLisitingFragment"
+        android:label="@string/allusers"
+        tools:layout="@layout/fragment_userlisitng" />
+
+
+    <!--    <fragment-->
+    <!--        android:id="@+id/nav_createcustom"-->
+    <!--        android:name="com.webgurus.attendanceportal.ui.customer.AddCustomerFragment"-->
+    <!--        android:label="@string/createcustomer"-->
+    <!--        tools:layout="@layout/fragment_userlisitng" />-->
+
+
+    <fragment
+        android:id="@+id/nav_rolelisting"
+        android:name="com.webgurus.attendanceportal.ui.role.RoleListingFragment"
+        android:label="@string/rolelisting"
+        tools:layout="@layout/fragment_rolelisting" />
+
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.webgurus.attendanceportal.ui.category.CategoryListingFragment"
+        android:label="@string/catgorylisting"
+        tools:layout="@layout/fragment_categorylisting" />
+
+
+    <fragment
+        android:id="@+id/nav_unit"
+        android:name="com.webgurus.attendanceportal.ui.unitmanage.UnitListingFragment"
+        android:label="@string/unitlisting"
+        tools:layout="@layout/fragment_unitlisting" />
+
+    <fragment
+        android:id="@+id/nav_productlisting"
+        android:name="com.webgurus.attendanceportal.ui.productmanagement.ProductManagementFragment22"
+        android:label="@string/productmanagement"
+        tools:layout="@layout/fragment_productmanagement" />
+
+
+    <fragment
+        android:id="@+id/nav_orderlisting"
+        android:name="com.webgurus.attendanceportal.ui.order.OrderListingFragment"
+        android:label="@string/orderlisting"
+        tools:layout="@layout/fragment_orderlisting">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_orderdispatchready"
+        android:name="com.webgurus.attendanceportal.ui.order.OrderDispatchReadyFragment"
+        android:label="@string/order_ready_for_dispatched"
+        tools:layout="@layout/fragment_orderreadydispatch">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_orderdispatched"
+        android:name="com.webgurus.attendanceportal.ui.order.DispatchedFragment"
+        android:label="@string/dispatchedorder"
+        tools:layout="@layout/fragment_orderlisting">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_approvedorders"
+        android:name="com.webgurus.attendanceportal.ui.order.ApprovedOrderFragment"
+        android:label="@string/approvedorder"
+        tools:layout="@layout/fragment_orderlisting">
+
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_permission"
+        android:name="com.webgurus.attendanceportal.ui.permission.PermissionFragment"
+        android:label="@string/permissions"
+        tools:layout="@layout/fragment_permission" />
+
+
+    <fragment
+        android:id="@+id/nav_reports"
+        android:name="com.webgurus.attendanceportal.ui.reports.MyReports"
+        android:label="@string/reports"
+        tools:layout="@layout/fragment_permission" />
+
+
+    <fragment
+        android:id="@+id/nav_latlongtest"
+        android:name="com.webgurus.LatLongTesting"
+        android:label="@string/location"
+        tools:layout="@layout/fragment_lalongtest" />
+
+    <fragment
+        android:id="@+id/nav_latlongreal"
+        android:name="com.webgurus.LatLongRealData"
+        android:label="@string/location"
+        tools:layout="@layout/fragment_lalongtest" />
+
+
+    <fragment
+        android:id="@+id/nav_logsissues"
+        android:name="com.webgurus.LogsFragment"
+        android:label="@string/location"
+        tools:layout="@layout/fragment_lalongtest" />
+
+
+    <fragment
+        android:id="@+id/nav_bills"
+        android:name="com.webgurus.attendanceportal.ui.bills.BillsFragments"
+        android:label="@string/bills"
+        tools:layout="@layout/fragment_bills" />
+
+    <fragment
+        android:id="@+id/nav_setting"
+        android:name="com.webgurus.attendanceportal.ui.setting.SettingFragment"
+        android:label="@string/setting"
+        tools:layout="@layout/fragment_setting" />
+
+    <fragment
+        android:id="@+id/nav_customeroutstanding"
+        android:name="com.webgurus.attendanceportal.ui.customer.CustomerOutStanding"
+        android:label="@string/customerOutstanding"
+        tools:layout="@layout/fragment_setting" />
+
+
+</navigation>

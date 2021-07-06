@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_44sdp"
+        android:background="@color/colorPrimaryDark">
+
+
+        <ImageView
+            android:id="@+id/iv_backfromcust"
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_24sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_toEndOf="@+id/iv_backfromcust"
+            android:layout_toRightOf="@+id/iv_backfromcust"
+            android:text="@string/details"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_64sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:src="@drawable/model">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_22sdp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/clientnamse"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_usernamedetails"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:text="@string/clientname"
+                    android:textSize="@dimen/_12sdp">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/contact"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tv_contactcustomer"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:text="@string/phonevalue"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/addres"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_addresscustomer"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:paddingBottom="@dimen/_12sdp"
+                    android:text="@string/addressvalue"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayoutorder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/pendingorder">
+
+        </com.google.android.material.tabs.TabItem>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lastorders">
+
+        </com.google.android.material.tabs.TabItem>
+
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/neworder">
+
+        </com.google.android.material.tabs.TabItem>
+
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_orderlisitng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.viewpager.widget.ViewPager>
+
+
+</LinearLayout>

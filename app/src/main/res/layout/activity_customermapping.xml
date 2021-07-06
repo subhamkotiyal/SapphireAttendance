@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@color/colorPrimary">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_backfromreport"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/customermapping"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/Readyfordispatch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/SelectExecutivetogethisreport"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/ll_fieldmanagername"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_agent"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/agent" />
+
+            <RelativeLayout
+                android:id="@+id/rl_fieldmanager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:background="@drawable/spinner_outline">
+
+
+                <Spinner
+                    android:id="@+id/sp_userslisitng"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/customer"
+                    android:textColor="@color/blue_grey"
+                    android:textColorHint="@color/blue_grey"
+                    android:textSize="@dimen/_10sdp">
+
+
+                </Spinner>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/search_executed"
+        android:layout_width="@dimen/_64sdp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/button_blue"
+        android:padding="@dimen/_4sdp"
+        android:text="@string/search"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:focusable="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:padding="@dimen/_5sdp"
+        android:text="@string/Selectmanagertogethisreport"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/ll_managername"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/tv_agenmanager"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="@string/agent" />
+
+            <RelativeLayout
+                android:id="@+id/rl_manager"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:background="@drawable/spinner_outline">
+
+
+                <Spinner
+                    android:id="@+id/sp_managerlisitng"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/customer"
+                    android:textColor="@color/blue_grey"
+                    android:textColorHint="@color/blue_grey"
+                    android:textSize="@dimen/_10sdp">
+
+
+                </Spinner>
+
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/search_manager"
+        android:layout_width="@dimen/_64sdp"
+        android:clickable="true"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/button_blue"
+        android:padding="@dimen/_4sdp"
+        android:text="@string/search"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_13sdp"
+        android:focusable="true" />
+
+
+
+
+
+</LinearLayout>

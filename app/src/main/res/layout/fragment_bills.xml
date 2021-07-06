@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/fragment_bills"
+            style="@style/MyCustomFormTheme"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp">
+
+
+            <ImageView
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="@dimen/_28sdp"
+                android:id="@+id/iv_emailicon"
+                android:layout_margin="@dimen/_12sdp"
+                android:src="@drawable/ic_search">
+
+            </ImageView>
+
+
+            <EditText
+                android:id="@+id/search_edit_customer"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/iv_emailicon"
+                android:layout_height="@dimen/_38sdp"
+                android:hint="@string/bills"
+                android:textSize="@dimen/_10sdp"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:imeActionLabel="search"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/grey">
+
+            </EditText>
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/rv_billslisting"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:elevation="@dimen/_4sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="@dimen/_94sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_root"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".8">
+
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:gravity="center"
+                        android:text="15 Aug 2020"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13sdp">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.2">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_intime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="09:00 A.M"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_13sdp">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="IN - TIME"
+                            android:textSize="@dimen/_13sdp">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_16sdp"
+                        android:layout_marginLeft="@dimen/_16sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_outtime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="07:00 P.M"
+                            android:textSize="@dimen/_13sdp">
+
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/_2sdp"
+                            android:gravity="center"
+                            android:text="OUT - TIME"
+                            android:textSize="@dimen/_13sdp">
+
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+             >
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/ll_comment"
+                android:visibility="invisible"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/ic_comment">
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:text="@string/commetcount"
+                    android:textSize="@dimen/_10sdp">
+
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:text="@string/comment"
+                    android:textSize="@dimen/_10sdp">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_marginStart="@dimen/_22sdp"-->
+<!--                android:id="@+id/ll_viewtrack"-->
+<!--                android:visibility="invisible"-->
+<!--                android:layout_marginLeft="@dimen/_22sdp"-->
+<!--                android:layout_height="wrap_content">-->
+
+
+<!--                <ImageView-->
+<!--                    android:layout_width="18dp"-->
+<!--                    android:layout_height="18dp"-->
+<!--                    android:src="@drawable/ic_eye">-->
+
+<!--                </ImageView>-->
+
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_6sdp"-->
+<!--                    android:layout_marginLeft="@dimen/_6sdp"-->
+<!--                    android:baselineAligned="false"-->
+<!--                    android:text="@string/view"-->
+<!--                    android:textSize="@dimen/_10sdp">-->
+
+
+<!--                </TextView>-->
+
+
+<!--            </LinearLayout>-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginStart="@dimen/_22sdp"
+                android:layout_marginLeft="@dimen/_22sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:layout_marginLeft="@dimen/_6sdp"
+                    android:baselineAligned="false"
+                    android:text="@string/totaldistance"
+                    android:textSize="@dimen/_10sdp">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_totaldistance"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginLeft="@dimen/_4sdp"
+                    android:baselineAligned="false"
+                    android:text="@string/tenkm"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_12sdp">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:orientation="vertical"
+
+                android:weightSum="2">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_weight="1"
+                    android:gravity="end">
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_comment">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:text="@string/comment"
+                        android:textSize="@dimen/_12sdp">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_eye">
+
+                    </ImageView>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginLeft="@dimen/_6sdp"
+                        android:baselineAligned="false"
+                        android:text="@string/view"
+                        android:textSize="@dimen/_12sdp">
+
+
+                    </TextView>
+
+
+                </LinearLayout>
+
+            </LinearLayout>-->
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

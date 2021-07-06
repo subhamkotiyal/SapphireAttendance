@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_margin="@dimen/_4sdp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="4"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_marginRight="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/ordername_tv"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="@string/productvalue"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+
+                <TextView
+                    android:id="@+id/tv_order_variant"
+                    android:layout_width="wrap_content"
+                    android:text="@string/hundred"
+                    android:padding="@dimen/_6sdp"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/order_quntiy_tv"
+                    android:layout_width="wrap_content"
+                    android:text="@string/tenval"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+
+                <TextView
+                    android:id="@+id/order_total_price"
+                    android:layout_width="wrap_content"
+                    android:text="@string/thousand"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/_9sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/_6sdp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

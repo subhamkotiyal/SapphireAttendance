@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/changesttaus"
+        android:id="@+id/tv_status"
+        android:textSize="@dimen/_14sdp"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="@dimen/_14sdp"
+        android:src="@drawable/cancel"
+        android:id="@+id/iv_close"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_height="@dimen/_14sdp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_status"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+       <View
+           android:layout_width="match_parent"
+           android:background="@color/grey"
+           android:layout_height=".5dp">
+
+       </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/statusfor"
+            android:id="@+id/tv_sad"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:id="@+id/rl_status"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_height="@dimen/_38sdp">
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sp_status"
+                android:hint="@string/role"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:textColorHint="@color/grey">
+
+
+            </Spinner>
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/grey"
+            android:layout_height=".5dp">
+
+        </View>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/remarks"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="custom"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:id="@+id/ed_remarks"
+                android:hint="@string/remarks"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="@dimen/_12sdp"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_addstatus"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_42sdp"
+            android:text="@string/submit"
+            android:textSize="@dimen/_12sdp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_42sdp"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="@string/menu_home" />
+
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_home"
+            android:title="@string/dashboard" />
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_person"
+            android:title="@string/profile" />
+
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/attendance" />
+
+
+        <item
+            android:id="@+id/nav_mycustomer"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/customerlisitng" />
+
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_createcustomer"-->
+        <!--            android:icon="@drawable/ic_attendance"-->
+        <!--            android:title="@string/createuser"  />-->
+
+        <item
+            android:id="@+id/nav_userlisiting"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/allusers" />
+
+
+        <!--        <item-->
+        <!--            android:id="@+id/nav_createcustom"-->
+        <!--            android:icon="@drawable/ic_attendance"-->
+        <!--            android:title="@string/createcustomer"  />-->
+
+        <item
+            android:id="@+id/nav_rolelisting"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/rolelisting" />
+
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/catgorylisting" />
+
+
+        <item
+            android:id="@+id/nav_unit"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/unitlisting" />
+
+
+        <item
+            android:id="@+id/nav_productlisting"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/productmanagement" />
+
+        <item
+            android:id="@+id/nav_orderlisting"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/orderlsiiting" />
+
+        <item
+            android:id="@+id/nav_orderdispatchready"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/order_ready_for_dispatched" />
+
+
+        <item
+            android:id="@+id/nav_orderdispatched"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/dispatchedorder" />
+
+
+        <item
+            android:id="@+id/nav_approvedorders"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/approvedorder" />
+
+
+        <item
+            android:id="@+id/nav_permission"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/permissions" />
+
+
+        <item
+            android:id="@+id/nav_reports"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/reports" />
+
+
+        <item
+            android:id="@+id/nav_latlongtest"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/LatLongData" />
+
+
+        <item
+            android:id="@+id/nav_latlongreal"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/LatLongReal" />
+
+
+        <item
+            android:id="@+id/nav_logsissues"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/logs" />
+
+        <item
+            android:id="@+id/nav_bills"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/bills" />
+
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/setting" />
+
+        <item
+            android:id="@+id/nav_customeroutstanding"
+            android:icon="@drawable/ic_attendance"
+            android:title="@string/customerOutstanding" />
+
+
+    </group>
+</menu>

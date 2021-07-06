@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="wrap_content"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_users"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_usersicon"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/iv_usersicon"
+                    android:text="@string/users"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_orders"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_ordericon"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/iv_ordericon"
+                    android:text="@string/orders"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_attendance"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_customericon"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/iv_customericon"
+                    android:text="@string/attendances"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_customer"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_customer"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/iv_customer"
+                    android:layout_centerInParent="true"
+                    android:text="@string/customer"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_ageingReport"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_custom3ericon"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/iv_custom3ericon"
+                    android:text="@string/ageing_Report"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_topPerformance"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv3_customer"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/iv3_customer"
+                    android:layout_centerInParent="true"
+                    android:text="@string/top_Performers"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_dispatchReport"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv_custom3eqericon"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_below="@+id/iv_custom3eqericon"
+                    android:text="@string/DispatchReport"
+                    android:layout_centerInParent="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:textSize="@dimen/_14sdp"
+                    android:textColor="@color/white"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/ll_itemReport"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@color/colorAccent"
+            android:layout_height="@dimen/_104sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="@dimen/_30sdp"
+                    android:src="@drawable/calendar"
+                    android:id="@+id/iv3_customrer"
+                    app:tint="@color/white"
+                    android:layout_marginBottom="@dimen/_4sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_height="@dimen/_30sdp">
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/iv3_customrer"
+                    android:layout_centerInParent="true"
+                    android:text="@string/ItemReport"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14sdp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_targetvsachieved"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorAccent"
+                android:layout_height="@dimen/_104sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/iv_custom3eqeeericon"
+                        app:tint="@color/white"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="@dimen/_30sdp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/iv_custom3eqeeericon"
+                        android:text="@string/Targetvsachieved"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_deliver_vs_received"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorAccent"
+                android:layout_height="@dimen/_104sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/iv_deliver_vs_received"
+                        app:tint="@color/white"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="@dimen/_30sdp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/iv_deliver_vs_received"
+                        android:text="@string/delievervsreceived"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/ll_customermapping"
+                android:layout_margin="@dimen/_8sdp"
+                android:background="@color/colorAccent"
+                android:layout_height="@dimen/_104sdp">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:src="@drawable/calendar"
+                        android:id="@+id/iv_customeqricon"
+                        app:tint="@color/white"
+                        android:layout_marginBottom="@dimen/_4sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="@dimen/_30sdp">
+
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_below="@+id/iv_customeqricon"
+                        android:text="@string/customermapping"
+                        android:layout_centerInParent="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:textSize="@dimen/_14sdp"
+                        android:textColor="@color/white"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>

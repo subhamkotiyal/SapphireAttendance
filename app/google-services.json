@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "556753712306",
+    "firebase_url": "https://sapphire-industries-app-288306.firebaseio.com",
+    "project_id": "sapphire-industries-app-288306",
+    "storage_bucket": "sapphire-industries-app-288306.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556753712306:android:bc9de6c6ca2153caa0c5ab",
+        "android_client_info": {
+          "package_name": "com.webgurus.attendanceportal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "556753712306-tk9j69ot102m4rfambs81es3i9asi90g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCv0FvFeIc-V_7RWVDs80A6lAPyz1zQxiY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "556753712306-tk9j69ot102m4rfambs81es3i9asi90g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

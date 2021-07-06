@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorAccent"
+        android:layout_height="@dimen/_52sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:id="@+id/iv_backpermission"
+            android:src="@drawable/ic_back"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="@dimen/_24sdp">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/addpermission"
+            android:id="@+id/tv_permissionheadertittle"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/role"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:id="@+id/rl_spinnerpermission"
+            android:background="@drawable/drawable_rectangular"
+            android:layout_height="@dimen/_40sdp">
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/sp_rolelisting"
+                android:hint="@string/customer"
+                android:textSize="@dimen/_10sdp"
+                android:textColor="@color/blue_grey"
+                android:background="@android:color/transparent">
+
+
+            </Spinner>
+        </RelativeLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/permissions"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:id="@+id/rl_listingpermission"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_height="@dimen/_228sdp">
+
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <Button
+            android:layout_width="@dimen/_180sdp"
+            android:id="@+id/btn_submitpermission"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:background="@drawable/drawable_curve"
+            android:layout_height="@dimen/_46sdp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

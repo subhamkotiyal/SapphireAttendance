@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:gravity="center"
+        android:text="@string/updateuser"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold">
+
+
+    </TextView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_icon"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/names"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_emailicon"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_email">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_emailicon"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/emailadd"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_password"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/password">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_password"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/password"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_phonenumber"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/password">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_phonenumber"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/phone"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_dateofbirth"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_calender">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_dateofbirth"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/dateofbirth"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+
+                <RelativeLayout
+                    style="@style/MyCustomFormTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:id="@+id/iv_state"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:src="@drawable/ic_calender">
+
+                    </ImageView>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_toRightOf="@+id/iv_state"
+                        android:hint="@string/state"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textSize="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/grey">
+
+
+                    </EditText>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/MyCustomFormTheme"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp">
+
+
+                    <ImageView
+                        android:layout_width="@dimen/_16sdp"
+                        android:layout_height="@dimen/_12sdp"
+                        android:layout_margin="@dimen/_12sdp"
+                        android:id="@+id/iv_city"
+                        android:src="@drawable/ic_city">
+
+                    </ImageView>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_toRightOf="@+id/iv_city"
+                        android:hint="@string/city"
+                        android:textSize="@dimen/_10sdp"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:background="@android:color/transparent"
+                        android:textColorHint="@color/grey">
+
+
+                    </EditText>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_spinner"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_role"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_role">
+
+                </ImageView>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_role"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_roles"
+                    android:hint="@string/role"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </Spinner>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_usermanager"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_role">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_usermanager"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/usermanager"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="@string/updateuser"
+                android:textSize="@dimen/_12sdp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawableRight="@drawable/arrow"
+                android:background="@drawable/drawable_curve"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                style="@style/Widget.MaterialComponents.Button.Icon" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>

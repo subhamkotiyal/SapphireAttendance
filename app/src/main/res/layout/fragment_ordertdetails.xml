@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/order"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="10"
+            android:id="@+id/tv_orderid"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/customerNames"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_customername"
+            android:text="Test Customer"
+            android:textStyle="bold"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/instructions"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_instruction"
+            android:textStyle="bold"
+            android:text="dasfdfsdfsdfsdfsdfs"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/tv_totalprice"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/totalpricess"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:id="@+id/tv_totalorderprice"
+            android:inputType="number"
+            android:text="Rs. 117470"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/addresses"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:textStyle="bold"
+            android:id="@+id/tv_addresss"
+            android:layout_weight="1"
+            android:text="dasfdfsdfs"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/paymentreceived"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_paymentreceived"
+            android:textStyle="bold"
+            android:text="Rs.  1000 "
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/paymentpendings"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_paymentpending"
+            android:textStyle="bold"
+            android:text="Rs. 117470"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/statusdot"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/tv_status"
+            android:textStyle="bold"
+            android:text="Approved"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/blue_grey"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_height="1dp">
+
+    </View>
+
+    </LinearLayout>
+</LinearLayout>

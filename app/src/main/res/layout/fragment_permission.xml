@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:text="@string/user"
+        android:id="@+id/rv_permissionlisitng"
+        android:layout_margin="@dimen/_12sdp"
+        android:textSize="@dimen/_14sdp"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/white_add"
+            android:id="@+id/fab_main_permission"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

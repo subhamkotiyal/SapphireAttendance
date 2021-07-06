@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/_32sdp">
+
+        <ImageView
+            android:layout_width="@dimen/_16sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_backformapping"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/_16sdp">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/top_Performers"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_performers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/nodataavailable"
+            android:id="@+id/tv_nodata"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:visibility="gone"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

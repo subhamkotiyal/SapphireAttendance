@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.webgurus.attendanceportal">
+    <!-- Required for foreground services on P+. -->
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+
+
+    <application
+        android:name="com.webgurus.MyCustomApplication"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="n">
+
+        <activity android:name=".ui.reports.Target_vs_achieved">  </activity>
+        <activity android:name=".ui.reports.ItemReprt" />
+        <activity android:name=".ui.reports.DispatchReport" />
+        <activity android:name=".ui.reports.TopPerformance" />
+        <activity android:name=".ui.reports.AgeingReport" />
+        <activity android:name=".ui.reports.MyAttendanceReport" />
+
+        <activity
+            android:name=".ui.splash.SplashScreen"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.webgurus.newservice.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+
+
+
+        <receiver android:name=".AlarmBroadCastReceiver"
+            android:enabled="true"
+            android:process="com.hashedin.processname"
+            >
+
+        </receiver>
+
+
+        <receiver
+            android:name="com.webgurus.Restarter"
+            android:enabled="true"
+            android:exported="true">
+
+            <intent-filter>
+
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <action android:name="restartservice" />
+
+            </intent-filter>
+
+        </receiver>
+
+        <activity
+            android:name=".InternetSettingCheck"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".LocationPermissionCheck"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.task.ConfirmVisitActivity"
+            android:screenOrientation="portrait" /> <!-- <activity android:name=".ui.splash.SplashScreen"> </activity> -->
+        <activity
+            android:name=".ui.home.HomeActivity22"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.home.HomeActivity33"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.task.TaskDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".TaskActivity"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.webgurus.network.FirebaseMessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".demoservice.FService"
+            android:enabled="true"
+            android:process="com.hashedin.processname"
+            android:foregroundServiceType="location"
+            android:stopWithTask="false"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+<!--        <activity-->
+<!--            android:name="com.webgurus.MainActivityFinal2"-->
+<!--            android:screenOrientation="portrait" />-->
+
+
+        <activity
+            android:name="com.webgurus.MainActivityFinal2"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity
+            android:name=".ui.commets.CommentsViews"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.trackuer.TrackUserDailyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.profile.EditProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.role.AddRoleActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.customer.CustomerDetailsFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.category.AddNewCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.unitmanage.AddNewUnitActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.productmanagement.AddProductManagementActivity" />
+        <activity
+            android:name=".ui.order.AddNewOrderActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.order.CustomerOrderListingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.customer.AddCustomerFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.createuser.CreateUserFragment"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.createuser.ViewUserAttendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.customer.ShowAllManagersBottomSheet"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.permission.AddPermission"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.reports.MyOrderReportsActivity" />
+        <activity android:name=".ui.reports.MyUserReports" />
+        <activity android:name=".ui.reports.MyCustomerReports" />
+        <activity android:name=".ui.reports.MyAttendanceFragment" />
+
+        <activity android:name=".ui.bills.AddBillActivity">
+        </activity>
+
+        <activity android:name=".ui.createuser.UserCurrentLocation"> </activity>
+
+        <activity android:name=".ui.reports.DeliveredVsReceived"> </activity>
+
+
+        <activity android:name=".ui.reports.UserSalesReport"> </activity>
+
+        <activity android:name=".ui.reports.CustomerMappingActivity"> </activity>
+
+        <activity android:name=".ui.reports.CustomerMappingDetailsActivity"> </activity>
+
+
+        <activity android:name=".ui.createuser.AddUserTargetActivity"> </activity>
+
+
+
+
+    </application>
+
+</manifest>

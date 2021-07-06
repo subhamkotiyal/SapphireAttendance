@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_12sdp"
+        android:elevation="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:textSize="@dimen/_10sdp"
+                android:textFontWeight="400"
+                android:text="Organisation Name       :"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/tv_organisationname"
+                android:text="Lorem Ipsum"
+                android:textSize="@dimen/_10sdp"
+                android:textFontWeight="400"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:text="Contact Person Name  :"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_contactperson"
+                    android:layout_weight="1"
+                    android:text="Lorem Ipsum"  android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:text="Email                                 :"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/tv_email"
+                    android:layout_weight="1"
+                    android:text="Lorem Ipsum"
+                    android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_margin="@dimen/_6sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:text="Phone Number                :"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:textFontWeight="400"
+                    android:id="@+id/tv_phonenumber"
+                    android:text="Lorem Ipsum"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

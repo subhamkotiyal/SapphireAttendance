@@ -1,0 +1,762 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ui.reports.Target_vs_achieved">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_42sdp"
+        android:background="@color/colorPrimary">
+
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_backfromreport"
+            app:tint="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_height="wrap_content">
+
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/itemReport"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/Readyfordispatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/SelectExecutivetogethisreport"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_fieldmanagername"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_agent"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="@string/fieldmanager" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_fieldmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/ta_userslisitng"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/customer"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_fieldmanagertarget"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_target"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/target"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_target"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_target"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_fieldmanagerdate"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_datetag"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/date"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_fieldmanagercalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <TextView
+                        android:id="@+id/tv_fieldmanagerdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/date"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/ll_fieldmanagermonth"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:id="@+id/tv_monthlytag"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/monthly"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_monthly"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_monthly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/ll_fieldmanageryear"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/year"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_year"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_fieldmanagerweeklycalender"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/weeksdays"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:id="@+id/rl_cal"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:text="@string/weeksdays"
+                        android:id="@+id/tv_weekdays"
+                        android:gravity="center"
+                        android:layout_height="match_parent">
+
+
+                    </TextView>
+
+
+<!--                    <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView-->
+<!--                        android:id="@+id/calendar"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        custom:disable_date_color="#ABABAB"-->
+<!--                        custom:text_size_title="10dp"-->
+<!--                        custom:text_size_week="10dp"-->
+<!--                        custom:text_size_date="10dp"-->
+<!--                        custom:range_color="@color/colorPrimary"-->
+<!--                        custom:selected_date_circle_color="@color/selected_date_circle_color"-->
+<!--                        custom:title_color="@color/black">-->
+
+
+<!--                    </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>-->
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/search_executed"
+            android:layout_width="@dimen/_64sdp"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:background="@drawable/button_blue"
+            android:padding="@dimen/_4sdp"
+            android:text="@string/search"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:focusable="true" />
+
+
+
+        <TextView
+            android:id="@+id/Readyfordispeatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:text="@string/Selectmanagertogethisreport"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_13sdp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_managername"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_managername"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:textSize="@dimen/_11sdp"
+                    android:text="@string/fieldmanager" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_manager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/ta_useruuslisitng"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/customer"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_managertarget"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:id="@+id/tv_targetmanager"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/target"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_managertarget"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_managerspinnertarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_managerdate"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/date"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_managercalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <TextView
+                        android:id="@+id/tv_managerdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/date"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/ll_managermonth"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/monthly"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_managermonth"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_monthmanager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:visibility="gone"
+                android:id="@+id/ll_manageryear"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/year"
+                    android:textSize="@dimen/_11sdp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_yearmanager"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <Spinner
+                        android:id="@+id/sp_yearmanager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/blue_grey"
+                        android:textColorHint="@color/blue_grey"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </Spinner>
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:id="@+id/ll_managerweeklycalender"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/weeksdays"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <RelativeLayout
+                    android:id="@+id/rl_managerweekcalender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:background="@drawable/spinner_outline">
+
+
+                    <TextView
+                        android:id="@+id/tv_managerweekdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/date"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/_10sdp">
+
+
+                    </TextView>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="@dimen/_64sdp"
+                android:id="@+id/tv_search_manager"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:background="@drawable/button_blue"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/search"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:textSize="@dimen/_13sdp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>

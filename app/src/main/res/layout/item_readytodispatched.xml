@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_12sdp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="ID                                             :"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_orderid"
+                    android:text="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Party Name                           :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Tata dsaknfdsf kjjds"
+                    android:id="@+id/tv_partyname"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Total Price                             :"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="1 Kg"
+                    android:id="@+id/tv_totalprice"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Payment Received               :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:textSize="@dimen/_10sdp"
+                    android:id="@+id/tv_paymentreceived"
+                    android:text="1000"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Address                                  :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:id="@+id/tv_addresssale"
+                    android:text="Guru Kmdslk dkjsfnkj"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Order Date                              :"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="1 Kg"
+                    android:id="@+id/tv_orderdates"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Last Transaction Date         :"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="7788"
+                    android:id="@+id/tv_lasttransactiondate"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Remark                                     :"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="7788"
+                    android:id="@+id/tv_remark"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

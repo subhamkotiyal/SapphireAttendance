@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_root"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/relative_ed_role"
+        style="@style/MyCustomFormTheme"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_36sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:id="@+id/iv_emailicon"
+            android:layout_margin="@dimen/_12sdp"
+            android:src="@drawable/ic_search">
+
+        </ImageView>
+
+
+        <EditText
+            android:id="@+id/search_ed_role"
+            android:layout_width="match_parent"
+            android:layout_toRightOf="@+id/iv_emailicon"
+            android:layout_height="@dimen/_38sdp"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:hint="@string/searchrole"
+            android:textSize="@dimen/_10sdp"
+            android:imeOptions="actionSearch"
+            android:textColor="@color/black"
+            android:background="@android:color/transparent"
+            android:textColorHint="@color/grey">
+
+        </EditText>
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_below="@+id/relative_ed_role"
+        android:layout_width="match_parent"
+        android:id="@+id/rv_rolelsiitng"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textview_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="256dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="@dimen/_88sdp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:elevation="@dimen/_12sdp"
+            android:text="Export Role"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_export"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="246dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#ffffff"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/user" />
+
+        <TextView
+            android:id="@+id/textview_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="186dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:text="Import"
+            android:elevation="@dimen/_12sdp"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="166dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:backgroundTint="#ffffff"
+            android:tint="@color/colorPrimary"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/book" />
+
+        <TextView
+            android:id="@+id/textview_addprpoduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="116dp"
+            android:layout_marginEnd="88dp"
+            android:layout_marginRight="88dp"
+            android:background="@color/colorPrimary"
+            android:elevation="@dimen/_12sdp"
+            android:padding="8dp"
+            android:text="Add Role"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="106dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginRight="24dp"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            android:background="@color/colorPrimary"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/white_add" />
+
+
+
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            app:srcCompat="@drawable/white_add"
+            android:id="@+id/fab"
+            android:background="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/_12sdp"
+            android:layout_alignParentRight="true"
+            android:layout_height="wrap_content"
+            android:contentDescription="TODO">
+
+        </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

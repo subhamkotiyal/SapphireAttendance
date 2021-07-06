@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/_32sdp">
+
+           <ImageView
+               android:layout_width="wrap_content"
+               android:src="@drawable/ic_back"
+               android:layout_centerVertical="true"
+               android:layout_marginStart="@dimen/_8sdp"
+               android:layout_height="wrap_content">
+
+
+           </ImageView>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/addtarget"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/target"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:id="@+id/ed_"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:inputType="number"
+        android:layout_height="wrap_content">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/targetdate"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_monthlydates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_26sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/spinner_outline"
+        android:orientation="vertical">
+
+
+        <Spinner
+            android:id="@+id/sp_monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@android:color/transparent"
+            android:hint="@string/customer"
+            android:textColor="@color/blue_grey"
+            android:textColorHint="@color/blue_grey"
+            android:textSize="@dimen/_10sdp">
+
+
+        </Spinner>
+
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@string/dates"
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_calenderdates"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_26sdp"
+        android:background="@drawable/spinner_outline"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_dateincalender"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:hint="@string/date"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="@dimen/_10sdp">
+
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:layout_width="@dimen/_124sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:id="@+id/btn_submit"
+        android:background="@color/colorPrimary"
+        android:text="@string/submit"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_height="@dimen/_32sdp">
+
+    </Button>
+
+
+
+</LinearLayout>

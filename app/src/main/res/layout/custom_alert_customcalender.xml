@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+
+    <com.archit.calendardaterangepicker.customviews.DateRangeCalendarView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        custom:disable_date_color="#ABABAB"
+        custom:text_size_title="10dp"
+        custom:text_size_week="10dp"
+        custom:text_size_date="10dp"
+        custom:range_color="@color/colorPrimary"
+        custom:selected_date_circle_color="@color/selected_date_circle_color"
+        custom:title_color="@color/black">
+
+
+    </com.archit.calendardaterangepicker.customviews.DateRangeCalendarView>
+
+</LinearLayout>

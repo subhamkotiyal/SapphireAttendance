@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerVertical="true"
+    android:layout_centerInParent="true"
+    android:paddingBottom="@dimen/_16sdp"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="@string/addpayment"
+        android:id="@+id/tv_status"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:layout_margin="@dimen/_16sdp"
+        android:layout_height="wrap_content">
+
+
+    </TextView>
+
+    <ImageView
+        android:layout_width="@dimen/_14sdp"
+        app:tint="@color/black"
+        android:src="@drawable/cancel"
+        android:id="@+id/iv_close"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_marginRight="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp"
+        android:layout_height="@dimen/_14sdp">
+
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tv_status"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_height="wrap_content">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:endIconMode="custom"
+            android:gravity="center_vertical"
+            android:textColorHint="@color/black"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:id="@+id/ed_amount"
+                android:hint="@string/amounts"
+                android:textSize="@dimen/_12sdp"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:singleLine="true"
+                android:layout_height="wrap_content">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <Button
+            android:id="@+id/btn_addpayment"
+            android:layout_width="@dimen/_160sdp"
+            android:layout_height="@dimen/_38sdp"
+            android:text="@string/submit"
+            android:textSize="@dimen/_12sdp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_42sdp"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

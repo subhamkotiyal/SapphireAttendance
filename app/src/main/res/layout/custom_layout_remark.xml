@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/_12sdp"
+    android:layout_centerInParent="true"
+    android:id="@+id/rl_root"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:layout_height="@dimen/_224sdp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/ed_remarks"
+            android:hint="@string/editremark"
+            android:minHeight="@dimen/_134sdp"
+            android:gravity="start"
+            android:textSize="@dimen/_12sdp"
+            android:padding="@dimen/_12sdp"
+            android:background="@drawable/drawable_grey"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <Button
+            android:layout_width="@dimen/_164sdp"
+            android:layout_below="@+id/ed_remarks"
+            android:id="@+id/btn_submitremark"
+            android:layout_centerVertical="true"
+            android:background="@drawable/reactnagular_drawable"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12sdp"
+            android:layout_height="@dimen/_42sdp">
+
+        </Button>
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

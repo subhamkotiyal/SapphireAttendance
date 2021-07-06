@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+<!--                    <RelativeLayout-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
+
+<!--                        <ImageView-->
+<!--                            android:layout_width="@dimen/_24sdp"-->
+<!--                            android:src="@drawable/logout_24"-->
+<!--                            android:id="@+id/iv_logout"-->
+<!--                            android:layout_alignParentRight="true"-->
+<!--                            android:layout_marginEnd="@dimen/_12sdp"-->
+<!--                            android:layout_marginRight="@dimen/_12sdp"-->
+<!--                            android:layout_centerHorizontal="true"-->
+<!--                            android:layout_centerVertical="true"-->
+<!--                            android:layout_height="@dimen/_24sdp">-->
+
+
+<!--                        </ImageView>-->
+
+
+<!--                    </RelativeLayout>-->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Version 4.01"
+                android:textColor="@color/white"
+                android:gravity="center"
+                />
+
+            <ImageView
+                android:id="@+id/iv_logout"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_gravity="end"
+                android:src="@drawable/logout_24"
+                android:layout_marginRight="@dimen/_17sdp"
+                android:layout_height="@dimen/_24sdp">
+
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="@dimen/_20sdp"
+                android:id="@+id/iv_help"
+                android:layout_gravity="end"
+                android:src="@drawable/help"
+                android:layout_marginRight="@dimen/_17sdp"
+                android:layout_height="@dimen/_20sdp">
+
+
+            </ImageView>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_main" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

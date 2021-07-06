@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_12sdp"
+        android:layout_margin="@dimen/_12sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".2"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id                                   :  "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".6"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Customer Name        :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Price                  :"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Receiving   :"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:text="Address                      :"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/orderdate"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lasTransectionDate"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight=".8"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/ag_txt_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Id"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/ag_txt_customername"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_weight=".6"
+                    android:hint="Customer Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/ag_txt_total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Total Price"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+                <TextView
+                    android:id="@+id/ag_txt_payentReceiving"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:hint="Payment Receiving"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ag_txt_address"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ag_txt_orderDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:hint="Order Date"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ag_txt_last_transection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Last Transection"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10sdp">
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

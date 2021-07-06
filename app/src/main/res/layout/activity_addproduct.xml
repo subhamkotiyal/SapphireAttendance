@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/_42sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_24sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/ic_backforproduct"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginLeft="@dimen/_6sdp"
+            android:layout_height="@dimen/_24sdp">
+
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/createproduct"
+            android:id="@+id/tv_header"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+    </RelativeLayout>
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="@dimen/_12sdp"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/createproduct"-->
+<!--        android:textColor="@color/colorPrimary"-->
+<!--        android:textSize="@dimen/_16sdp"-->
+<!--        android:textStyle="bold">-->
+
+
+<!--    </TextView>-->
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginLeft="@dimen/_12sdp"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_marginEnd="@dimen/_12sdp"
+                    android:layout_marginRight="@dimen/_12sdp"
+                    android:layout_marginBottom="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_productname"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/productname"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_spinnercat"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_cat"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_role">
+
+                </ImageView>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_cat"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_category"
+                    android:hint="@string/role"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/blue_grey"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/blue_grey">
+
+
+                </Spinner>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_unitview"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_unit"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_role">
+
+                </ImageView>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_unit"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_unitproduct"
+                    android:hint="@string/role"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/blue_grey"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/blue_grey">
+
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_minprice"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_minprice"
+                    android:layout_toRightOf="@+id/iv_minprice"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/minprice"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_maxprice"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_maxprice"
+                    android:layout_toRightOf="@+id/iv_maxprice"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/maxprice"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_price"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_price"
+                    android:layout_toRightOf="@+id/iv_price"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/price"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_quantity"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:id="@+id/ed_quantity"
+                    android:layout_toRightOf="@+id/iv_quantity"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/quantities"
+                    android:textSize="@dimen/_10sdp"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:id="@+id/rl_instock"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_stocks"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_role">
+
+                </ImageView>
+
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_stocks"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/sp_stock"
+                    android:hint="@string/role"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/blue_grey"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/blue_grey">
+
+
+                </Spinner>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_addprproduct"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="@string/addproduct"
+                android:textSize="@dimen/_12sdp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawableRight="@drawable/arrow"
+                android:background="@drawable/drawable_curve"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                style="@style/Widget.MaterialComponents.Button.Icon" />
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
+

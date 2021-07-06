@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:elevation="@dimen/_12sdp"
+        android:id="@+id/item_report_card"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_6sdp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="ID                                             :"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:id="@+id/tv_saleid"
+                    android:text="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Product                                  :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="Abcdef"
+                    android:id="@+id/tv_saleproduct"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Variant                                    :"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:text="1 Kg"
+                    android:id="@+id/tv_salevariant"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="Last Day sale(quantity)      :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:textSize="@dimen/_10sdp"
+                    android:id="@+id/tv_lastdatesale"
+                    android:text="1 Kg"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:text="7 Day sale(quantity)            :"
+                    android:layout_weight="1"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:id="@+id/tv_sevendaysale"
+                    android:text="1 Kg"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="30 Day sale(quantity)          :"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="1 Kg"
+                    android:id="@+id/tv_thirtydaysale"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Average Rate                         :"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.5"
+                    android:text="7788"
+                    android:id="@+id/tv_averageratesale"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_height="wrap_content">
+
+
+                </TextView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

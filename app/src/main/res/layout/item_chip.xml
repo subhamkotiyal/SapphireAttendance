@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.robertlevonyan.views.chip.Chip
+        android:layout_width="wrap_content"
+        android:id="@+id/chip"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:minHeight="@dimen/_40sdp"
+        android:orientation="horizontal"
+        app:mcv_closable="true"
+        android:layout_gravity="center"
+        android:background="@drawable/drawable_rectangular"
+        android:layout_height="wrap_content">
+
+    </com.robertlevonyan.views.chip.Chip>
+
+
+
+
+</LinearLayout>

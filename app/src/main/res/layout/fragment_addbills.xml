@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="@dimen/_44sdp">
+
+
+        <ImageView
+            android:layout_width="@dimen/_22sdp"
+            android:src="@drawable/ic_back"
+            android:id="@+id/iv_backfromcustomer"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginLeft="@dimen/_12sdp"
+            android:layout_height="@dimen/_22sdp">
+
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_header"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:text="@string/addbill"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sdp"
+            >
+
+
+        </TextView>
+
+
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_icon"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_icon"
+                    android:id="@+id/ed_billno"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/billno"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_icon2"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_icon2"
+                    android:id="@+id/ed_totalamount"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/totalamountwihout"
+                    android:maxLines="1"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_icon3"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_icon3"
+                    android:id="@+id/ed_paymentreceived"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/paymentreceivenot"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                style="@style/MyCustomFormTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_12sdp">
+
+
+                <ImageView
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_height="@dimen/_12sdp"
+                    android:id="@+id/iv_icon4"
+                    android:layout_margin="@dimen/_12sdp"
+                    android:src="@drawable/ic_user">
+
+                </ImageView>
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_toRightOf="@+id/iv_icon4"
+                    android:id="@+id/ed_paymentpending"
+                    android:layout_height="@dimen/_38sdp"
+                    android:hint="@string/paymentpendingwithout"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textSize="@dimen/_10sdp"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                    android:textColorHint="@color/grey">
+
+
+                </EditText>
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_createcustomer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:text="@string/addbill"
+                android:textSize="@dimen/_12sdp"
+                android:drawableEnd="@drawable/arrow"
+                android:drawableRight="@drawable/arrow"
+                android:background="@drawable/drawable_curve"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_32sdp"
+                android:layout_marginLeft="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginRight="@dimen/_16sdp"
+                style="@style/Widget.MaterialComponents.Button.Icon" />
+
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+
+
+</LinearLayout>
